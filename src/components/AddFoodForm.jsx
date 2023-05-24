@@ -24,7 +24,7 @@ function AddFoodForm() {
         <label htmlFor="image">Picture:</label>
         <input type="text" name="image"/>
 
-    
+     <button>Add to the list</button>
       </form>
       
     </div>
