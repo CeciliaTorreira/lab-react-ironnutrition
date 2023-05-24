@@ -5,6 +5,8 @@ function FoodBox({ food }) {
       <h2>{food.name}</h2>
       <p>Calories: {food.calories}</p>
       <p>Servings: {food.servings}</p>
+      <br />
+      <button>Delete</button>
     </div>
   );
 }

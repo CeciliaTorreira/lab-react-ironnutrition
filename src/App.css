@@ -13,7 +13,11 @@
 }
 
 .food-card img {
-  margin: 10px 0 10px 0;
+  margin: 10px 5px 10px 5px;
+}
+
+.food-card button{
+  margin-bottom: 10px;
 }
 
 .food-list{
