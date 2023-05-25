@@ -6,12 +6,18 @@ import AddFoodForm from './components/AddFoodForm';
 
 function App() {
   const [foodList, setFoodList] = useState(foods);
+  
+
 
   return (
     <div className="App">
 
    <AddFoodForm/>
 
+
+
+
+  {/* Tenemos un array y hacemos un .map() */}
     <h3 >Food List</h3>
       <section className="food-list">
                 {foodList.map((eachFood, index) => (
