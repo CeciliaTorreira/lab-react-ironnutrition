@@ -1,4 +1,7 @@
-function FoodBox({ food }) {   // Podemos destructurar para evitar redundancia y así que el código sea más limpio y fácil de leer.
+function FoodBox({ food, deleteFood, index }) {   // Podemos destructurar para evitar redundancia y así que el código sea más limpio y fácil de leer.
+   const deleteOneFood = ()=>{
+  deleteFood(index)}
+  
   return (
     <div className="food-card">
       <img src={food.image} alt={food.name} width={200} />
@@ -6,7 +9,7 @@ function FoodBox({ food }) {   // Podemos destructurar para evitar redundancia y
       <p>Calories: {food.calories}</p>
       <p>Servings: {food.servings}</p> 
       <br />
-      <button>Delete</button>
+      <button onClick={deleteOneFood}>Delete</button>
     </div>
   );
 }
